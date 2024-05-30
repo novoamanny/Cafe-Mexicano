@@ -1,0 +1,316 @@
+{% comment %} Hero {% endcomment %}
+<section id="section-hero" class="section-hero" style="background-image: url({{ 'CM-Hero.jpg' | asset_url }})">
+  <img src="{{ 'rose.png' | asset_url }}" class="flower home-flower" alt="Savor The Moment">
+  <div class="copy-hover-box copy-hover-box-home white">
+    <h2 class="americane regular white uppercase hero-title">¿Quieres </br>Café mexicano?</h2>
+    <h3 class="veneer regular white uppercase hero-subtitle">Purely Mexican Coffee Coming Soon <span style="display: none;">It’s Purely Mexican Coffee</span></h3>
+    <p class="white copy">Experience the art of flavor and enjoy the subtle sweetness of Mexican coffee when you drink a cup of Café Mexicano. We use 100% Arabica specialty coffee beans grown, harvested, and roasted in Mexico.</p>
+    <a href="/pages/coffee" class="button white white-border veneer mustard-hover uppercase">Explore Mexican Blends</a>
+  </div>
+  <a class="anchor" href="#anchor">
+    <img src="{{ 'down-arrow.png' | asset_url }}" class="bounce-arrow opacity-top" alt="Savor The Moment">
+    <img src="{{ 'down-arrow-yellow.png' | asset_url }}" class="bounce-arrow opacity-bottom" alt="Savor The Moment">
+  </a>
+</section>
+  {% comment %} Lock Screen Width {% endcomment %}
+<div class="full-width center">
+<div class="lock-width">
+  {% comment %} Savor The Moment {% endcomment %}
+    <section id="intro" class="full-width center double-section padding-top-bottom relative">
+      <span id="anchor" class="anchor"></span>
+      <div class="two-fifth-width left auto-margin text-left intro-copy">
+          <h2 class="americane regular title">TASTE THE TRADITION</h2>
+          <p class="copy">In Mexico, a cup of coffee is much more than a morning pick-me-up. It is offered as an expression of hospitality, a moment to sip and savor, and a central part of the rich Mexican culture. The country has a proud heritage of producing high-quality specialty coffee beans, grown by generations of proud community farmers.</p>
+          <a href="/pages/coffee" class="button black black-border veneer blue-hover">LEARN MORE</a>
+      </div>
+      <div class="half-width center align intro-products">
+        <div class="full-width center">
+          <img src="{{ 'Intro-products.png' | asset_url }}" class="intro-image" alt="Savor The Moment">
+        </div>
+      </div>
+    </section>
+</div>
+</div>
+
+  {% comment %} Savor The Moment {% endcomment %}
+    <section class="full-width center center-copy-box-section padding-top-bottom" style="background-image: url({{ 'section-2.jpg' | asset_url }})">
+      <div class="center-copy-box center text-center white-border">
+        <div class="full-width center">
+          <img src="{{ 'Bean.png' | asset_url }}" class="box-logo" alt="Savor The Moment">
+        </div>
+          <h2 class="americane regular white title">SAVOR THE MOMENT</h2>
+          <p class="copy">Mexican coffee is traditionally brewed in a clay pot with certain spices to accentuate the natural flavor. It’s not a quick-brew process, so making it forces drinkers to slow down for moment, enjoy the aromas blending, and wait with joyous anticipation for that first sip. Whether you’re brewing coffee for café con leche or café de olla, consider this your invitation to smell, sip, and savor the sweet warmth of a cup of Café Mexicano. ¿Un cafesito?</p>
+          <a href="/pages/coffee" class="button white white-border veneer maroon-hover">EXPLORE COFFEE</a>
+      </div>
+    </section>
+
+{% comment %} Product Line {% endcomment %}
+  {% comment %} Lock Screen Width {% endcomment %}
+<div class="full-width center">
+<div class="lock-width">
+    <section id="product-line" class="center product-line product-line-home padding-top-bottom full-width">
+      <h2 class="americane regular uppercase title title-margin-bottom full-width">Your invitation to smell, sip, and savor.</h2>
+      <div class="center padding-top-bottom-alt full-width" style="margin-bottom: -120px;">
+        {% comment %} MEXICAN BLEND {% endcomment %}
+        <div class="item center">
+          <div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <img src="{{ 'mexican-product.png' | asset_url }}" class="product-image product-image-front crouton-bg" alt="Med Roast">
+                
+                <div class="flip-card-back shift">
+                  <img src="{{ 'CM-mexican-back.png' | asset_url }}" class="product-image product-image-front crouton-bg-2" alt="Med Roast">
+                </div>
+              </div>
+            </div>
+            <h2 class='name bold veneer product-name uppercase full-width'>Mexican Blend</h2>
+            <h2 class="product-price regular no-margin no-line-height home-price text-center full-width" style="display: none;">&#36;12.00</h2>
+            <form method="post" action="/cart/add" class="add-to-cart-form">
+              <input name="id" value="40358325551190" type="hidden" />
+              <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
+              <input name="add" class="button black black-border veneer uppercase mustard-hover" value="Add to Cart" type="submit" />
+            </form>
+          </div>
+        </div>
+        {% comment %} VERACRUZ RESERVE {% endcomment %}
+        <div class="item center">
+          <div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <img src="{{ 'veracruz-product.png' | asset_url }}" class="product-image product-image-front crouton-bg" alt="Med Roast">
+                <div class="flip-card-back">
+                  <img src="{{ 'CM-veracruz-back.png' | asset_url }}" class="product-image crouton-bg-2 bag-bg-2" alt="Med Roast">
+                </div>
+              </div>
+            </div>
+            <h2 class='name bold veneer product-name uppercase full-width'>Veracruz Reserve</h2>
+            <h2 class="product-price regular no-margin no-line-height home-price full-width" style="display: none;">&#36;12.00</h2>
+            <form method="post" action="/cart/add" class="add-to-cart-form">
+              <input name="id" value="40358298550358" type="hidden" />
+              <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
+              <input name="add" class="button black black-border veneer uppercase blue-hover" value="Add to Cart" type="submit" />
+            </form>
+          </div>
+        </div>
+        {% comment %} CHIAPAS RESERVE {% endcomment %}
+        <div class="item center">
+          <div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <img src="{{ 'chiapas-product.png' | asset_url }}" class="product-image product-image-front crouton-bg" alt="Med Roast">
+                <div class="flip-card-back">
+                  <img src="{{ 'CM-chiapas-back.png' | asset_url }}" class="product-image product-image-front crouton-bg-2 bag-bg-2" alt="Med Roast">
+                </div>
+              </div>
+            </div>
+            <h2 class='name bold veneer product-name uppercase full--width'>Chiapas Reserve</h2>
+            <h2 class="product-price regular no-margin no-line-height home-price full-width" style="display: none;">&#36;12.00</h2>
+            <form method="post" action="/cart/add" class="add-to-cart-form">
+              <input name="id" value="40357980012630" type="hidden" />
+              <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
+              <input name="add" class="button black black-border veneer uppercase orange-hover" value="Add to Cart" type="submit" />
+            </form>
+          </div>
+        </div>
+        {% comment %} OAXACA RESERVE {% endcomment %}
+        <div class="item center">
+          <div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+              <img src="{{ 'oaxaca-product.png' | asset_url }}" class="product-image product-image-front crouton-bg" alt="Med Roast">
+              <div class="flip-card-back">
+                  <img src="{{ 'CM-oaxaca-back.png' | asset_url }}" class="product-image product-image-front crouton-bg-2 bag-bg-2" alt="Med Roast">
+                </div>
+              </div>
+            </div>
+            <h2 class='name bold veneer product-name uppercase full-width'>Oaxaca Reserve</h2>
+            <h2 class="product-price regular no-margin no-line-height home-price full-width" style="display: none;">&#36;12.00</h2>
+            <form method="post" action="/cart/add" class="add-to-cart-form">
+              <input name="id" value="40358313394262" type="hidden" />
+              <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
+              <input name="add" class="button black black-border veneer uppercase maroon-hover" value="Add to Cart" type="submit" />
+            </form>
+          </div>
+        </div>
+        {% comment %} ESPRESSO {% endcomment %}
+        <div class="item center">
+          <div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+              <img src="{{ 'expresso-product.png' | asset_url }}" class="product-image product-image-front crouton-bg" alt="Med Roast">
+              <div class="flip-card-back">
+                  <img src="{{ 'CM-espresso-back.png' | asset_url }}" class="product-image product-image-front crouton-bg-2 bag-bg-2" alt="Med Roast">
+                </div>
+              </div>
+            </div>
+            <h2 class='name bold veneer product-name uppercase full-width'>Espresso</h2>
+            <h2 class="product-price regular no-margin no-line-height home-price full-width" style="display: none;">&#36;12.00</h2>
+            <form method="post" action="/cart/add" class="add-to-cart-form">
+              <input name="id" value="40358001049686" type="hidden" />
+              <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
+              <input name="add" class="button black black-border veneer uppercase black-hover" value="Add to Cart" type="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+  {% comment %} Respect The Process {% endcomment %}
+    <section class="full-width center center-copy-box-section padding-top-bottom" style="background-image: url({{ 'section-3.jpg' | asset_url }})">
+      <div class="center-copy-box center text-center white-border">
+        <div class="full-width center">
+          <img src="{{ 'Bean.png' | asset_url }}" class="box-logo" alt="Savor The Moment">
+        </div>
+          <h2 class="white title uppercase americane">HONOR THE PROCESS</h2>
+          <p class="copy">Café Mexicano is made from 100% mountain grown Arabica specialty coffee sourced from select growers in the premier highland regions of Mexico: Chiapas, Veracruz, and Oaxaca.</p>
+          <a href="/pages/coffee" class="button white white-border veneer blue-hover uppercase">Learn More</a>
+      </div>
+      {% comment %} <a href="#product-line">
+        <img src="{{ 'up-arrow.png' | asset_url }}" class="bounce-arrow bounce opacity-top" alt="Savor The Moment">
+        <img src="{{ 'up-arrow-yellow.png' | asset_url }}" class="bounce-arrow bounce opacity-bottom" alt="Savor The Moment">
+      </a> {% endcomment %}
+    </section>
+
+
+
+{% comment %} EXTRA SCRIPTS {% endcomment %}
+{% comment %} OWL CAROUSEL {% endcomment %}
+<script src="{{ 'owl.carousel.min.js' | asset_url }}" type="text/javascript"></script>
+<script src="{{ 'aos.js' | asset_url }}" type="text/javascript"></script>
+
+{% comment %} ANIMATION {% endcomment %}
+<script>
+    AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 600, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  });
+</script>
+{% comment %} OWL CAROUSEL {% endcomment %}
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      items:1,
+      autoHeight:true,
+      autoplay: false,
+      loop: true,
+      center: true,
+      nav: true,
+      animateIn: 'fadeIn',
+      animateOut: 'fadeOut',
+      
+    });
+  });
+</script>
+<style type="text/css">
+.owl-stage .fadeIn, .owl-stage .fadeOut {
+transition: ease all 3s !important;
+}
+</style>
+
+<script>
+  // Functionality to handle "Add to Cart" clicks that will open the side cart drawer, update the cart totals in the header, add items to the cart, and refresh the cart drawer
+  // Requirements: Form with class name "add-to-cart-form" with an input submit type that also contains Shopify's required data for products such as id, quantity, etc.
+
+  // Get all forms with the class name "add-to-cart-form"
+  const forms = document.querySelectorAll('.add-to-cart-form');
+
+  // Defines a function to process a form
+  function processForm(form) {
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent default form submission so that the browser doesn't load a page
+
+      // Serialize the form data
+      var formData = $(this).serialize();
+
+      $.ajax({
+        type: 'POST',
+        url: '/cart/add.js',
+        data: formData,
+        dataType: 'json',
+        success: function (response) {
+
+          // On success, refresh the cart drawer and update the cart quantity total
+          // Fetches http://{root.url}/cart?section_id=main-cart-items
+          async function fetchAndReplaceHtml(newContentBlock) {
+            const url = window.Shopify.routes.root + 'cart?section_id=main-cart-items';
+            const response = await fetch(url);
+            const responseText = await response.text();
+            const newHtml = new DOMParser().parseFromString(responseText, "text/html").getElementById('main-cart-items').innerHTML;
+            document.getElementById(newContentBlock).innerHTML = newHtml;
+            return newHtml;
+          }
+
+          fetchAndReplaceHtml('CartDrawer-CartItems');
+          
+          // Define a target for the cart item count total
+          var specificItemQTY = document.querySelectorAll('.cart-count-bubble span');
+
+          // Specify the value you're looking for
+          const variant_id = response.variant_id;
+
+          // Find the element with the specified data attribute value
+          const elementWithSpecificDataAttribute = document.querySelector(`[data-quantity-variant-id="${variant_id}"]`);
+
+          if (elementWithSpecificDataAttribute) {
+            // The element was found. You can now work with the element
+            // console.log('Element found:', elementWithSpecificDataAttribute);
+            let currentValue = parseInt(elementWithSpecificDataAttribute.value);
+            currentValue += 1; // Increment the value by 1
+            elementWithSpecificDataAttribute.value = currentValue; // Set the new value
+          } else {
+            // The element with the specified value was not found
+            console.log('Element not found.');
+          }
+
+          // Toggle the cart drawer visibility
+          document.querySelector('.drawer').classList.toggle('active');
+
+          fetch('/cart.js') // Fetch the cart object
+          .then(response => response.text())
+
+          .then((responseText) => {
+            // console.log(responseText);
+            data = JSON.parse(responseText);
+            var counterEl = document.querySelectorAll('.cart-count-bubble span');
+            var counterElUnique = document.querySelectorAll('.quantity__input');
+
+            counterEl.forEach((element) => {
+              element.innerHTML = data.item_count;
+            });
+            counterElUnique.forEach((element) => {
+              element.innerHTML = data.quantity;
+            });
+          });
+        },
+        error: function () {
+          // Do something on error (e.g., show an error message)
+          console.log("Error adding product to cart via /cart/add.js POST");
+        }
+      });
+    });
+  }
+
+  // Loop through each form and attach the submit event listener
+  forms.forEach(processForm);
+
+</script>

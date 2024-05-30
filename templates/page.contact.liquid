@@ -1,0 +1,60 @@
+{% comment %} Lock Screen Width {% endcomment %}
+<div class="full-width">
+    <div class="lock-width">
+        {% comment %} Contact Page Headline {% endcomment %}
+        <section class="full-width center justify-left padding-top-bottom relative contact-top">
+                <h2 class="americane regular title text-left uppercase full-width">Let’s chat Over a cup</h2>
+                <h2 class="americane regular hero-subtitle uppercase" style="margin-left: 0;">Connect with café Mexicano</h2>
+        </section>
+    </div>
+</div>
+
+{% comment %} Extra Space {% endcomment %}
+<div class="full-width padding-top-bottom-alt mobile-contact-space"></div>
+
+{% comment %} Contact Form Box {% endcomment %}
+<section class="full-width center center-copy-box-section padding-top-bottom relative contact-bottom" style="background-image: url({{ 'contact-image.jpg' | asset_url }})">
+  <div class="center-copy-box center text-center white-border contact-box">
+    <div class="email half-width contact-form left form-width">
+        <h2 class="americane regular white title uppercase text-left ">Send a Message</h2>
+        <div class="wpcf7">    
+            {% form 'contact', id: 'ContactForm', class: "custom-input center justify-left"%}
+                {%- if form.posted_successfully? -%}
+                    <h2 class="form-status form-status-list form__message white" tabindex="-1" autofocus>
+                      {% render 'icon-success' %}
+                      {{ 'templates.contact.form.post_success' | t }}
+                    </h2>
+                  {%- elsif form.errors -%}
+                    <div class="form__message">
+                      <h2 class="form-status caption-large text-body white" role="alert" tabindex="-1" autofocus>
+                        {% render 'icon-error' %}
+                        {{ 'templates.contact.form.error_heading' | t }}
+                      </h2>
+                    </div>
+                    <ul class="form-status-list caption-large" role="list">
+                      <li>
+                        <a href="#ContactForm-email" class="link white">
+                          {{ form.errors.translated_fields.email | capitalize }}
+                          {{ form.errors.messages.email }}
+                        </a>
+                      </li>
+                    </ul>
+                  {%- endif -%}
+                <input type="name" name="contact[first_name]" placeholder="First Name*" id="first_name" class="name-field-width field-margin-bottom field" required> 
+                <input type="name" name="contact[last_name]" placeholder="Last Name*" id="last_name" class="name-field-width field-margin-bottom field-margin-left field" required> 
+                <input type="email" name="contact[email]" placeholder="Email Address*" id="Email" class="email-field-width field-margin-bottom field" required> 
+                <input type="phone" name="contact[{{ 'templates.contact.form.phone' | t }}]" placeholder="Phone" id="Phone" class="phone-field-width field-margin-bottom field-margin-left field"> 
+                <textarea id="Message" name="contact[{{ 'templates.contact.form.comment' | t }}]" rows="10" cols="50" class="textarea-width field" placeholder="Let's talk coffee here..." required></textarea>
+                <button class="button white white-border veneer blue-hover uppercase" type="submit">Send Now</button>
+            {% endform %}
+        </div>
+    </div>
+    {% comment %} <div class="two-fifth-width right">
+        <h2 class="americane regular white title uppercase text-left">Contact Us</h2>
+        <p class="uppercase veneer full-width text-left subtitle white no-line-height social-text">Phone</p>
+        <p class="uppercase veneer full-width text-left subtitle white"><a class="white" style="text-decoration: none;" href="tel:9798365978">979.836.5978</a></p>
+    </div> {% endcomment %}
+  </div>
+</section>
+
+  

@@ -1,0 +1,667 @@
+{% comment %} Hero {% endcomment %}
+<section id="section-hero" class="section-hero product-hero" style="background-image: url({{ 'product-hero2.jpg' | asset_url }})">
+  <img src="{{ 'flower.png' | asset_url }}" class="flower product-flower" alt="Savor The Moment">
+  <div class="copy-hover-box copy-hover-box-product white">
+    <h2 class="americane regular white uppercase hero-title">Fine</br>Mexican</br>Coffee</h2>
+  </div>
+  <a href="#anchor" class="full-width center">
+    <img src="{{ 'down-arrow-black.png' | asset_url }}" class="bounce-arrow product-page-arrow opacity-top" alt="Savor The Moment">
+    <img src="{{ 'down-arrow-yellow.png' | asset_url }}" class="bounce-arrow product-page-arrow opacity-bottom" alt="Savor The Moment">
+  </a>
+</section>
+
+  {% comment %} Product Intro {% endcomment %}
+    <section id="intro" class="full-width center center-copy-box-section padding-top-bottom-alt-alt relative">
+        <span id="anchor" class="anchor"></span>
+      <div class="center-copy-box no-opacity center text-center white-border">
+          <h2 class="americane regular uppercase black full-width title">Rich Heritage.</br>Unhurried Hospitality.</h2>
+          <p class="black regular copy mark">The perfect altitude, cool environment, and location produces some of the highest quality coffee beans in the world. Combined with the cultivation techniques of expert hands, Mexican coffee is very balanced, light in flavor and smooth. It is some of the most pleasant coffee you can drink. Café Mexicano beans are harvested, blended, artisan roasted, and ground at origin to bring you an amazing cup of coffee. ¡Que delicioso!</p>
+      </div>
+      <img src="{{ 'rose.png' | asset_url }}" class="flower flower-intro" alt="Savor The Moment">
+    </section>
+
+{% comment %} Product Line {% endcomment %}
+  {% comment %} Lock Screen Width {% endcomment %}
+<div class="full-width center">
+{% comment %} <div class="lock-width"> {% endcomment %}
+    <section id="product-line" class="product-line product-line-product center text-left product-page">
+
+
+        <div class="full-width padding-top-bottom center border-top relative product-padding text-left">
+            <div class="border-logo center">
+                <img src="{{ 'yellow-bean.png' | asset_url }}" alt="Savor The Moment">
+            </div>
+            <div class="half-width product-mobile">
+                <div class="carousel-container">
+                    <div class="owl-carousel yellow">
+                        <div>
+                            <img src="{{ 'mexican-product-large.png' | asset_url }}" class="product-image product-image-front image-resize" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'CM-mexican-back.png' | asset_url }}" class="product-image product-image-front product-bag-bg-2" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'mexican-product-left.png' | asset_url }}" class="product-image product-image-front image-resize" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'mexican-product-right.png' | asset_url }}" class="product-image product-image-front product-bag-bg-2" alt="Med Roast">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="half-width product-copy-padding center align product-mobile">
+                <div>
+                    <div class="space-between full-width">
+                        <h2 class='product-page-font name americane regular uppercase mid-bold title'>Mexican Blend</h2>
+                        <h2 class="product-page-font product-price americane regular mid-bold title" style="display: none;">&#36;12</h2>
+                    </div>
+                    <div class="full-width text-left product-copy">
+                        <p class="auto-margin mark">Our Mexican Blend offers mild flavor with notes of fruit and chocolate and a delicate body.</p>
+                    </div>
+                    <div class="full-width flavor-note">
+                        <div class="space-between border-bottom">
+                            <h3 class="uppercase veneer">Region</h3>
+                            <div class="center align">
+                                <span class="arrow-copy mark">Mexico</span>
+                                <div class="center">
+                                    <img src="{{ 'accordion-arrow.png' | asset_url }}" alt="Med Roast" class="arrow auto-margin">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="full-width text-left copy product-copy mark">
+                            <p class="auto-margin">Sourced from select growers in the premier highland regions of Mexico: Chiapas, Veracruz, and Oaxaca.</p>
+                        </div>
+                    </div>
+                    <div class="full-width region">
+                        <div class="space-between border-bottom">
+                            <h3 class="uppercase veneer">Roast</h3>
+                            <div class="center align">
+                                <span class="arrow-copy mark">Medium</span>
+                                {% comment %} <img src="{{ 'accordion-arrow.png' | asset_url }}" alt="Med Roast" class="arrow auto-margin"> {% endcomment %}
+                            </div>
+                        </div>
+                        <div class="full-width text-left copy">
+                            <p class="auto-margin">Mexican coffee is very balanced, light in flavor and smooth. It is some of the most pleasant coffee you can drink. Café Mexicano beans are harvested, blended, roasted, and ground at origin to bring you an amazing cup of coffee. ¡Que delicioso!</p>
+                        </div>
+                    </div>
+                        
+                    <form id="add-to-cart" class="cart-form full-width space-between align add-to-cart-form" method="post" action="/cart/add">
+                    {% comment %} <input type="hidden" name="id" value="{{ product.variants.first.id }}" /> {% endcomment %}
+                    <div class="center align mobile-q">
+                        <span id="deincrement">-</span>
+                            <div class="center aligncart-quantity align">
+                                <input min="1" type="number" id="selector1" name="quantity" class="quantity bag-text" value="1"/>
+                                <span class="bag-text uppercase veneer bold">bag</span>
+                            </div>
+                        <span id="increment" class="yellow">+</span>
+                    </div>
+                    <div class="mobile-q">
+                        <input name="id" value="40358325551190" type="hidden" />
+                        <input name="add" class="button black black-border veneer uppercase mustard-hover" value="Add to Cart" type="submit" />
+                    </div>
+                    </form>
+                        
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="full-width padding-top-bottom center border-top relative product-padding text-left">
+            <div class="border-logo center">
+                <img src="{{ 'blue-bean.png' | asset_url }}" alt="Savor The Moment">
+            </div>
+            <div class="half-width center product-mobile">
+                <div class="carousel-container">
+                    <div class="owl-carousel blue">
+                        <div>
+                            <img src="{{ 'veracruz-product-large.png' | asset_url }}" class="product-image product-image-front image-resize" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'CM-veracruz-back.png' | asset_url }}" class="product-image product-image-front product-bag-bg-2" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'veracruz-product-left.png' | asset_url }}" class="product-image product-image-front image-resize" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'veracruz-product-right.png' | asset_url }}" class="product-image product-image-front product-bag-bg-2" alt="Med Roast">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="half-width product-copy-padding center align product-mobile">
+                <div>
+                    <div class="space-between full-width">
+                        <h2 class='product-page-font name americane regular uppercase mid-bold title'>Veracruz reserve</h2>
+                        <h2 class="product-page-font product-price americane regular mid-bold title" style="display: none;">&#36;12</h2>
+                    </div>
+                    <div class="full-width text-left product-copy">
+                        <p class="auto-margin">Our Veracruz Reserve is a single origin, medium-low body coffee. It has notes of the aromatic fruit flavors for which the region is known, along with notes of chocolate.</p>
+                    </div>
+                    <div class="full-width flavor-note">
+                        <div class="space-between border-bottom">
+                            <h3 class="uppercase veneer">Region</h3>
+                            <div class="center align">
+                                <span class="arrow-copy">Veracruz</span>
+                                <div class="center">
+                                    <img src="{{ 'accordion-arrow.png' | asset_url }}" alt="Med Roast" class="arrow auto-margin">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="full-width text-left copy product-copy">
+                            <p class="auto-margin">The long, thin state on the Gulf Coast of southern Mexico is Veracruz. The 100% mountain grown Arabica coffee Café Mexicano sources from there grow in deep volcanic soils and high humidity between 800 and 1,600 meters above sea level. Together, these factors help to produce light-bodied, high acidity coffee beans with an intense aroma.</p>
+                        </div>
+                    </div>
+                    <div class="full-width region">
+                        <div class="space-between border-bottom">
+                            <h3 class="uppercase veneer">Roast</h3>
+                            <div class="center align">
+                                <span class="arrow-copy">Medium</span>
+                                {% comment %} <img src="{{ 'accordion-arrow.png' | asset_url }}" alt="Med Roast" class="arrow auto-margin"> {% endcomment %}
+                            </div>
+                        </div>
+                        <div class="full-width text-left copy">
+                            <p class="auto-margin">Mexican coffee is very balanced, light in flavor and smooth. It is some of the most pleasant coffee you can drink. Café Mexicano beans are harvested, blended, roasted, and ground at origin to bring you an amazing cup of coffee. ¡Que delicioso!</p>
+                        </div>
+                    </div>
+                    
+                    <form id="add-to-cart" class="cart-form full-width space-between align add-to-cart-form" method="post" action="/cart/add">
+                    {% comment %} <input type="hidden" name="id" value="{{ product.variants.first.id }}" /> {% endcomment %}
+                    <div class="center align mobile-q">
+                        <span id="deincrement2">-</span>
+                            <div class="center aligncart-quantity align">
+                                <input min="1" type="number" id="selector2" name="quantity" class="quantity bag-text" value="1"/>
+                                <span class="bag-text uppercase veneer bold">bag</span>
+                            </div>
+                        <span id="increment2" class="blue">+</span>
+                    </div>
+                    <div class="mobile-q">
+                        <input name="id" value="40358298550358" type="hidden" />
+                        <input name="add" class="button black black-border veneer uppercase blue-hover" value="Add to Cart" type="submit" />
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      
+        <div class="full-width padding-top-bottom center border-top relative product-padding text-left">
+            
+            <div class="border-logo center">
+                <img src="{{ 'orange-bean.png' | asset_url }}" alt="Savor The Moment">
+            </div>
+            
+            <div class="half-width center product-mobile">
+                
+                <div class="carousel-container">
+                    <div class="owl-carousel orange">
+                        <div>
+                            <img src="{{ 'chiapas-product-large.png' | asset_url }}" class="product-image product-image-front image-resize" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'CM-chiapas-back.png' | asset_url }}" class="product-image product-image-front product-bag-bg-2" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'chiapas-product-left.png' | asset_url }}" class="product-image product-image-front image-resize" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'chiapas-product-right.png' | asset_url }}" class="product-image product-image-front product-bag-bg-2" alt="Med Roast">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="half-width product-copy-padding center align product-mobile">
+                <div>
+                    <div class="space-between full-width">
+                        <h2 class='product-page-font name americane regular uppercase mid-bold title'>Chiapas reserve</h2>
+                        <h2 class="product-page-font product-price americane regular mid-bold title" style="display: none;">&#36;12</h2>
+                    </div>
+                    <div class="full-width text-left product-copy">
+                        <p class="auto-margin">Our Chiapas Reserve is a single origin, medium-dark roast coffee with sweet, woody notes of hazelnut and slight hints of chocolate.</p>
+                    </div>
+                    <div class="full-width flavor-note">
+                        <div class="space-between border-bottom">
+                            <h3 class="uppercase veneer">Region</h3>
+                            <div class="center align">
+                                <span class="arrow-copy">Chiapas</span>
+                                <div class="center">
+                                    <img src="{{ 'accordion-arrow.png' | asset_url }}" alt="Med Roast" class="arrow auto-margin">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="full-width text-left copy product-copy">
+                            <p class="auto-margin">On the Guatemalan border, in the Sierra Madre Mountain range lies the state of Chiapas. Coffee farmers there grow what is known as Café de Altura (Altitude Coffee). The 100% Arabica coffee grown there is harvested at a height of up to 1,800 meters above sea level (slightly higher than the elevation of Denver, Colorado). Proximity to the equator and rich volcanic soils produce beans that are less bitter, with a hint of sweetness.</p>
+                        </div>
+                    </div>
+                    <div class="full-width region">
+                        <div class="space-between border-bottom">
+                            <h3 class="uppercase veneer">Roast</h3>
+                            <div class="center align">
+                                <span class="arrow-copy">Medium-Dark</span>
+                                {% comment %} <img src="{{ 'accordion-arrow.png' | asset_url }}" alt="Med Roast" class="arrow auto-margin"> {% endcomment %}
+                            </div>
+                        </div>
+                        <div class="full-width text-left copy">
+                            <p class="auto-margin">Mexican coffee is very balanced, light in flavor and smooth. It is some of the most pleasant coffee you can drink. Café Mexicano beans are harvested, blended, roasted, and ground at origin to bring you an amazing cup of coffee. ¡Que delicioso!</p>
+                        </div>
+                    </div>
+                    
+                    <form id="add-to-cart" class="cart-form full-width space-between align add-to-cart-form" method="post" action="/cart/add">
+                    {% comment %} <input type="hidden" name="id" value="{{ product.variants.first.id }}" /> {% endcomment %}
+                    <div class="center align mobile-q">
+                        <span id="deincrement3">-</span>
+                            <div class="center aligncart-quantity align">
+                                <input min="1" type="number" id="selector3" name="quantity" class="quantity bag-text" value="1"/>
+                                <span class="bag-text uppercase veneer bold">bag</span>
+                            </div>
+                        <span id="increment3" class="orange">+</span>
+                    </div>
+                    <div class="mobile-q">
+                        <input name="id" value="40357980012630" type="hidden" />
+                        <input name="add" class="button black black-border veneer uppercase orange-hover" value="Add to Cart" type="submit" />
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-width padding-top-bottom center border-top relative product-padding text-left">
+            <div class="border-logo center">
+                <img src="{{ 'maroon-bean.png' | asset_url }}" alt="Savor The Moment">
+            </div>
+            <div class="half-width center product-mobile">
+                <div class="carousel-container">    
+                    <div class="owl-carousel red">
+                        <div>
+                            <img src="{{ 'oaxaca-product-large.png' | asset_url }}" class="product-image product-image-front image-resize" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'CM-oaxaca-back.png' | asset_url }}" class="product-image product-image-front product-bag-bg-2" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'oaxaca-product-left.png' | asset_url }}" class="product-image product-image-front image-resize" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'oaxaca-product-right.png' | asset_url }}" class="product-image product-image-front product-bag-bg-2" alt="Med Roast">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="half-width product-copy-padding center align product-mobile">
+                <div>
+                    <div class="space-between full-width">
+                        <h2 class='product-page-font name americane regular uppercase mid-bold title'>Oaxaca Reserve</h2>
+                        <h2 class="product-page-font product-price americane regular mid-bold title" style="display: none;">&#36;12</h2>
+                    </div>
+                    <div class="full-width text-left product-copy">
+                        <p class="auto-margin">Our Oaxaca Reserve coffee is a single origin dark roast. You’ll enjoy a dark chocolate, sweet, bold-butter body thanks to a higher bean density than other coffees.</p>
+                    </div>
+                    <div class="full-width flavor-note">
+                        <div class="space-between border-bottom">
+                            <h3 class="uppercase veneer">Region</h3>
+                            <div class="center align">
+                                <span class="arrow-copy">Oaxaca</span>
+                                <div class="center">
+                                    <img src="{{ 'accordion-arrow.png' | asset_url }}" alt="Med Roast" class="arrow auto-margin">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="full-width text-left copy product-copy">
+                            <p class="auto-margin">Between Veracruz and Chiapas on the Pacific Coast and on Sierra Madre del Sur lies the state of Oaxaca. Coffee farmers there grow 100% Arabica coffee beans at an altitude between 1225 and 2,000 meters above sea level.</p>
+                        </div>
+                    </div>
+                    <div class="full-width region">
+                        <div class="space-between border-bottom">
+                            <h3 class="uppercase veneer">Roast</h3>
+                            <div class="center align">
+                                <span class="arrow-copy">Dark</span>
+                                {% comment %} <img src="{{ 'accordion-arrow.png' | asset_url }}" alt="Med Roast" class="arrow auto-margin"> {% endcomment %}
+                            </div>
+                        </div>
+                        <div class="full-width text-left copy">
+                            <p class="auto-margin">Mexican coffee is very balanced, light in flavor and smooth. It is some of the most pleasant coffee you can drink. Café Mexicano beans are harvested, blended, roasted, and ground at origin to bring you an amazing cup of coffee. ¡Que delicioso!</p>
+                        </div>
+                    </div>
+                    
+                    <form id="add-to-cart" class="cart-form full-width space-between align add-to-cart-form" method="post" action="/cart/add">
+                    {% comment %} <input type="hidden" name="id" value="{{ product.variants.first.id }}" /> {% endcomment %}
+                    <div class="center align mobile-q">
+                        <span id="deincrement4">-</span>
+                            <div class="center aligncart-quantity align">
+                                <input min="1" type="number" id="selector4" name="quantity" class="quantity bag-text" value="1"/>
+                                <span class="bag-text uppercase veneer bold">bag</span>
+                            </div>
+                        <span id="increment4" class="maroon">+</span>
+                    </div>
+                    <div class="mobile-q">
+                        <input name="id" value="40358313394262" type="hidden" />
+                        <input name="add" class="button black black-border veneer uppercase maroon-hover" value="Add to Cart" type="submit" />
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-width padding-top-bottom center border-top relative product-padding text-left">
+            <div class="border-logo center">
+                <img src="{{ 'black-bean.png' | asset_url }}" alt="Savor The Moment">
+            </div>
+            <div class="half-width center product-mobile">
+                <div class="carousel-container">    
+                    <div class="owl-carousel black">
+                        <div>
+                            <img src="{{ 'expresso-product-large.png' | asset_url }}" class="product-image product-image-front image-resize" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'CM-espresso-back.png' | asset_url }}" class="product-image product-image-front product-bag-bg-2" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'espresso-product-left.png' | asset_url }}" class="product-image product-image-front image-resize" alt="Med Roast">
+                        </div>
+                        <div>
+                            <img src="{{ 'espresso-product-right.png' | asset_url }}" class="product-image product-image-front product-bag-bg-2" alt="Med Roast">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="half-width product-copy-padding center align product-mobile">
+                <div>
+                    <div class="space-between full-width">
+                        <h2 class='product-page-font name americane regular uppercase mid-bold title'> Espresso</h2>
+                        <h2 class="product-page-font product-price americane regular mid-bold title" style="display: none;">&#36;12</h2>
+                    </div>
+                    <div class="full-width text-left product-copy">
+                        <p class="auto-margin">Café Mexicano Espresso is a full-bodied blend of Mexican coffee beans with notes of caramel and a rich, dark aroma.</p>
+                    </div>
+                    <div class="full-width flavor-note">
+                        <div class="space-between border-bottom">
+                            <h3 class="uppercase veneer">Region</h3>
+                            <div class="center align">
+                                <span class="arrow-copy">Mexico</span>
+                                <div class="center">
+                                    <img src="{{ 'accordion-arrow.png' | asset_url }}" alt="Med Roast" class="arrow auto-margin">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="full-width text-left copy product-copy">
+                            <p class="auto-margin">Our Espresso is a blend of beans sourced from select growers in the premier highland regions of Chiapas, Veracruz, Puebla and Oaxaca.</p>
+                        </div>
+                    </div>
+                    <div class="full-width region">
+                        <div class="space-between border-bottom">
+                            <h3 class="uppercase veneer">Roast</h3>
+                            <div class="center align">
+                                <span class="arrow-copy">Dark</span>
+                                {% comment %} <img src="{{ 'accordion-arrow.png' | asset_url }}" alt="Med Roast" class="arrow auto-margin"> {% endcomment %}
+                            </div>
+                        </div>
+                        <div class="full-width text-left copy">
+                            <p class="auto-margin">Mexican coffee is very balanced, light in flavor and smooth. It is some of the most pleasant coffee you can drink. Café Mexicano beans are harvested, blended, roasted, and ground at origin to bring you an amazing cup of coffee. ¡Que delicioso!</p>
+                        </div>
+                    </div>
+                    
+                    <form id="add-to-cart" class="cart-form full-width space-between align add-to-cart-form" method="post" action="/cart/add">
+                    {% comment %} <input type="hidden" name="id" value="{{ product.variants.first.id }}" /> {% endcomment %}
+                    <div class="center align mobile-q">
+                        <span id="deincrement5">-</span>
+                            <div class="center aligncart-quantity align">
+                                <input min="1" type="number" id="selector5" name="quantity" class="quantity bag-text" value="1"/>
+                                <span class="bag-text uppercase veneer bold">bag</span>
+                            </div>
+                        <span id="increment5" class="black">+</span>
+                    </div>
+                    <div class="mobile-q">
+                        <input name="id" value="40358001049686" type="hidden" />
+                        <input name="add" class="button black black-border veneer uppercase black-hover" value="Add to Cart" type="submit" />
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+  {% comment %} </div> {% endcomment %}
+</div>
+
+
+<script>
+    // Accordion
+    var flavorNotes = document.querySelectorAll('.flavor-note');
+    var regions = document.querySelectorAll('.region');
+    var flavorNotesArray = [...flavorNotes];
+    var regionsArray = [...regions];
+
+
+
+    flavorNotesArray.forEach((q, index) => {
+        q.addEventListener("click", () => {
+            if (q.classList.contains('expanded')) {
+                q.classList.remove('expanded')
+                // arrowsAltArray[index].classList.remove("visible")
+                // arrowsArray[index].classList.add('visible')
+            } else {
+                q.classList.add('expanded')
+                // arrowsArray[index].classList.remove('visible')
+                // arrowsAltArray[index].classList.add('visible')
+            }
+        });
+    })
+
+    let selector1 = document.getElementById("selector1");
+    let selector2 = document.getElementById("selector2");
+    let selector3 = document.getElementById("selector3");
+    let selector4 = document.getElementById("selector4");
+    let selector5 = document.getElementById("selector5");
+
+    const step = 1;
+    const max = 100;
+    const min = 1;
+    selector1.oninput = () => {   
+    selector1.value = selector1.value>max ? max : selector1.value<min ? min : selector1.value; 
+    }; 
+    increment.addEventListener("click", () => { 
+    if (parseInt(selector1.value) + step >= max) {
+        selector1.value = max;
+        return;
+    } 
+    selector1.value = parseInt(selector1.value) + step;
+    })
+    deincrement.addEventListener("click", () => {
+    if (parseInt(selector1.value) - step <= min) {
+        selector1.value = min;
+        return;
+    }
+    selector1.value = parseInt(selector1.value) - step;
+    })
+
+
+    selector2.oninput = () => {   
+    selector2.value = selector2.value>max ? max : selector2.value<min ? min : selector2.value; 
+    }; 
+    increment2.addEventListener("click", () => { 
+    if (parseInt(selector2.value) + step >= max) {
+        selector2.value = max;
+        return;
+    } 
+    selector2.value = parseInt(selector2.value) + step;
+    })
+    deincrement2.addEventListener("click", () => {
+    if (parseInt(selector2.value) - step <= min) {
+        selector2.value = min;
+        return;
+    }
+    selector2.value = parseInt(selector2.value) - step;
+    })
+
+    selector3.oninput = () => {   
+    selector3.value = selector3.value>max ? max : selector3.value<min ? min : selector3.value; 
+    }; 
+    increment3.addEventListener("click", () => { 
+    if (parseInt(selector3.value) + step >= max) {
+        selector3.value = max;
+        return;
+    } 
+    selector3.value = parseInt(selector3.value) + step;
+    })
+    deincrement3.addEventListener("click", () => {
+    if (parseInt(selector3.value) - step <= min) {
+        selector3.value = min;
+        return;
+    }
+    selector3.value = parseInt(selector3.value) - step;
+    })
+
+    selector4.oninput = () => {   
+    selector4.value = selector4.value>max ? max : selector4.value<min ? min : selector4.value; 
+    }; 
+    increment4.addEventListener("click", () => { 
+    if (parseInt(selector4.value) + step >= max) {
+        selector4.value = max;
+        return;
+    } 
+    selector4.value = parseInt(selector4.value) + step;
+    })
+    deincrement4.addEventListener("click", () => {
+    if (parseInt(selector4.value) - step <= min) {
+        selector4.value = min;
+        return;
+    }
+    selector4.value = parseInt(selector4.value) - step;
+    })
+
+    selector5.oninput = () => {   
+    selector5.value = selector5.value>max ? max : selector5.value<min ? min : selector5.value; 
+    }; 
+    increment5.addEventListener("click", () => { 
+    if (parseInt(selector5.value) + step >= max) {
+        selector5.value = max;
+        return;
+    } 
+    selector5.value = parseInt(selector5.value) + step;
+    })
+    deincrement5.addEventListener("click", () => {
+    if (parseInt(selector5.value) - step <= min) {
+        selector5.value = min;
+        return;
+    }
+    selector5.value = parseInt(selector5.value) - step;
+    })
+
+
+    // regionsArray.forEach((q, index) => {
+    //     q.addEventListener("click", () => {
+    //         if (q.classList.contains('expanded')) {
+    //             q.classList.remove('expanded')
+    //             // arrowsAltArray[index].classList.remove("visible")
+    //             // arrowsArray[index].classList.add('visible')
+    //         } else {
+    //             q.classList.add('expanded')
+    //             // arrowsArray[index].classList.remove('visible')
+    //             // arrowsAltArray[index].classList.add('visible')
+    //         }
+    //     });
+    // })
+</script>
+
+<script>
+    // Functionality to handle "Add to Cart" clicks that will open the side cart drawer, update the cart totals in the header, add items to the cart, and refresh the cart drawer
+    // Requirements: Form with class name "add-to-cart-form" with an input submit type that also contains Shopify's required data for products such as id, quantity, etc.
+  
+    // Get all forms with the class name "add-to-cart-form"
+    const forms = document.querySelectorAll('.add-to-cart-form');
+  
+    // Defines a function to process a form
+    function processForm(form) {
+      form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission so that the browser doesn't load a page
+  
+        // Serialize the form data
+        var formData = $(this).serialize();
+  
+        $.ajax({
+          type: 'POST',
+          url: '/cart/add.js',
+          data: formData,
+          dataType: 'json',
+          success: function (response) {
+  
+            // On success, refresh the cart drawer and update the cart quantity total
+            // Fetches http://{root.url}/cart?section_id=main-cart-items
+            async function fetchAndReplaceHtml(newContentBlock) {
+              const url = window.Shopify.routes.root + 'cart?section_id=main-cart-items';
+              const response = await fetch(url);
+              const responseText = await response.text();
+              const newHtml = new DOMParser().parseFromString(responseText, "text/html").getElementById('main-cart-items').innerHTML;
+              document.getElementById(newContentBlock).innerHTML = newHtml;
+              return newHtml;
+            }
+  
+            fetchAndReplaceHtml('CartDrawer-CartItems');
+            
+            // Define a target for the cart item count total
+            var specificItemQTY = document.querySelectorAll('.cart-count-bubble span');
+  
+            // Specify the value you're looking for
+            const variant_id = response.variant_id;
+  
+            // Find the element with the specified data attribute value
+            const elementWithSpecificDataAttribute = document.querySelector(`[data-quantity-variant-id="${variant_id}"]`);
+  
+            if (elementWithSpecificDataAttribute) {
+              // The element was found. You can now work with the element
+              // console.log('Element found:', elementWithSpecificDataAttribute);
+              let currentValue = parseInt(elementWithSpecificDataAttribute.value);
+              currentValue += 1; // Increment the value by 1
+              elementWithSpecificDataAttribute.value = currentValue; // Set the new value
+            } else {
+              // The element with the specified value was not found
+              console.log('Element not found.');
+            }
+  
+            // Toggle the cart drawer visibility
+            document.querySelector('.drawer').classList.toggle('active');
+  
+            fetch('/cart.js') // Fetch the cart object
+            .then(response => response.text())
+  
+            .then((responseText) => {
+              // console.log(responseText);
+              data = JSON.parse(responseText);
+              var counterEl = document.querySelectorAll('.cart-count-bubble span');
+              var counterElUnique = document.querySelectorAll('.quantity__input');
+  
+              counterEl.forEach((element) => {
+                element.innerHTML = data.item_count;
+              });
+              counterElUnique.forEach((element) => {
+                element.innerHTML = data.quantity;
+              });
+            });
+          },
+          error: function () {
+            // Do something on error (e.g., show an error message)
+            console.log("Error adding product to cart via /cart/add.js POST");
+          }
+        });
+      });
+    }
+  
+    // Loop through each form and attach the submit event listener
+    forms.forEach(processForm);
+  
+  </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="{{ 'owl.carousel.min.js' | asset_url }}"></script>
+
+<script>
+    // Owl Carousel initialization
+    jQuery(document).ready(function(){
+        jQuery(".owl-carousel").owlCarousel({
+            dots: true,
+            center: true,
+            autoWidth: true,
+            loop: true,
+            margin: 10,
+            items: 1,
+        });
+    });
+</script>
